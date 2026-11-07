@@ -8,458 +8,207 @@
 }
 
 body {
-    background: #061329;
+    background: #101010;
     color: white;
 }
 
-/* HEADER */
 header {
+    background: #080808;
+    padding: 22px 8%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 18px 7%;
-    background: #081a35;
-    border-bottom: 1px solid #123d69;
-    position: sticky;
-    top: 0;
-    z-index: 100;
 }
 
-.brand {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    text-decoration: none;
-}
-
-.brand-logo {
-    font-size: 28px;
-    font-weight: 900;
-    font-style: italic;
-    color: #00d9ff;
-    border: 2px solid #00d9ff;
-    border-radius: 10px;
-    padding: 5px 9px;
-}
-
-.brand h2 {
-    font-size: 19px;
-    color: white;
-}
-
-.brand span {
-    color: #00d9ff;
-    font-size: 12px;
-    letter-spacing: 5px;
+.logo {
+    font-size: 27px;
     font-weight: bold;
 }
 
-nav {
-    display: flex;
-    gap: 25px;
+.logo span {
+    color: #d6a84f;
 }
 
 nav a {
     text-decoration: none;
     color: white;
-    font-size: 14px;
+    margin-left: 25px;
     transition: .3s;
 }
 
 nav a:hover {
-    color: #00d9ff;
+    color: #d6a84f;
 }
 
-/* HERO */
 .hero {
-    min-height: 570px;
-    padding: 80px 7%;
+    min-height: 550px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 40px;
+    padding: 70px 10%;
     background:
-        radial-gradient(circle at 80% 40%, #104a80 0%, transparent 35%),
-        linear-gradient(120deg, #061329, #0a2850);
+    linear-gradient(90deg, #000000 10%, #000000b5 55%, transparent),
+    url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1600")
+    center/cover;
 }
 
 .hero-content {
-    max-width: 650px;
+    max-width: 600px;
 }
 
-.tag, .section-label {
-    color: #00d9ff;
-    font-size: 13px;
-    font-weight: bold;
-    letter-spacing: 3px;
+.subtitle {
+    color: #d6a84f;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
 }
 
 .hero h1 {
-    font-size: clamp(35px, 5vw, 58px);
+    font-size: 52px;
     line-height: 1.2;
-    margin: 25px 0;
+    margin-bottom: 20px;
 }
 
-.hero h1 span, .section h2 span {
-    color: #00d9ff;
+.hero h1 span {
+    color: #d6a84f;
 }
 
-.hero p {
-    color: #c3d3e8;
+.hero-content p {
     line-height: 1.8;
-    max-width: 550px;
-}
-
-.hero-buttons {
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-    margin-top: 30px;
-}
-
-.btn, .btn-outline {
-    display: inline-block;
-    padding: 14px 25px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: .3s;
+    color: #ddd;
+    margin-bottom: 25px;
 }
 
 .btn {
-    background: #00c8ff;
-    color: #041329;
+    display: inline-block;
+    background: #d6a84f;
+    color: black;
+    padding: 13px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .3s;
 }
 
 .btn:hover {
     background: white;
-    transform: translateY(-4px);
+    transform: translateY(-3px);
 }
 
-.btn-outline {
-    border: 1px solid #00d9ff;
-    color: white;
-}
-
-.btn-outline:hover {
-    background: #00c8ff;
-    color: #061329;
-}
-
-/* LOGO HERO */
-.hero-visual {
-    width: 340px;
-    height: 340px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.circle {
-    width: 290px;
-    height: 290px;
-    border-radius: 50%;
-    border: 2px solid #00d9ff;
-    box-shadow: 0 0 40px #007bff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: radial-gradient(circle, #164e80, #061329 70%);
-}
-
-.signal {
-    color: #00d9ff;
-    font-size: 55px;
-}
-
-.big-nk {
-    font-size: 95px;
-    font-weight: 900;
-    font-style: italic;
-    color: #00d9ff;
-}
-
-.circle h2 {
-    letter-spacing: 7px;
-}
-
-.circle p {
-    font-size: 10px;
-    letter-spacing: 3px;
-    margin-top: 10px;
-}
-
-/* FEATURES */
-.features {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    padding: 25px 7%;
-    background: #0b2040;
-    border-top: 1px solid #007bff;
-    border-bottom: 1px solid #007bff;
-}
-
-.features div {
-    color: #00d9ff;
-    font-size: 22px;
+.mobil {
+    padding: 75px 8%;
     text-align: center;
 }
 
-.features span {
-    color: white;
-    font-size: 14px;
-    margin-left: 8px;
+.mobil h2, .tentang h2, .kontak h2 {
+    font-size: 32px;
+    color: #d6a84f;
 }
 
-/* SECTIONS */
-.section {
-    padding: 85px 7%;
-    text-align: center;
+.deskripsi {
+    color: #bbb;
+    margin: 15px 0 35px;
 }
 
-.section h2 {
-    font-size: 34px;
-    margin: 18px 0;
-}
-
-.about p, .contact p {
-    color: #b8c9dc;
-    line-height: 1.9;
-    max-width: 750px;
-    margin: auto;
-}
-
-/* SERVICES */
-.services {
-    background: #091a34;
-}
-
-.service-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    margin-top: 45px;
-}
-
-.service-card {
-    background: #102747;
-    border: 1px solid #174b78;
-    border-radius: 15px;
-    padding: 35px 20px;
-    transition: .3s;
-}
-
-.service-card:hover {
-    transform: translateY(-8px);
-    border-color: #00d9ff;
-    box-shadow: 0 0 20px #007bff44;
-}
-
-.service-icon {
-    font-size: 40px;
-    margin-bottom: 20px;
-}
-
-.service-card h3 {
-    margin-bottom: 15px;
-    color: #00d9ff;
-}
-
-.service-card p {
-    color: #bdcce0;
-    font-size: 14px;
-    line-height: 1.7;
-}
-
-/* PRICING */
-.pricing-info {
-    color: #b8c9dc;
-    font-size: 13px;
-}
-
-.price-grid {
+.mobil-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
-    margin-top: 45px;
 }
 
-.price-card {
-    background: #102747;
-    border: 1px solid #17528a;
-    padding: 35px 20px;
-    border-radius: 18px;
-    position: relative;
+.card {
+    background: #1c1c1c;
+    border: 1px solid #333;
+    border-radius: 10px;
+    overflow: hidden;
     transition: .3s;
 }
 
-.price-card:hover {
-    transform: translateY(-7px);
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #d6a84f;
 }
 
-.price-card h3 {
-    color: #00d9ff;
+.card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 22px;
+}
+
+.card h3 {
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #aaa;
+    margin-bottom: 15px;
+}
+
+.card h4 {
+    color: #d6a84f;
+    font-size: 21px;
     margin-bottom: 20px;
 }
 
-.price-card h2 {
-    font-size: 35px;
-}
-
-.price-card p {
-    color: #b8c9dc;
-    margin-bottom: 25px;
-}
-
-.price-card ul {
-    list-style: none;
-    text-align: left;
-    line-height: 2.5;
-    margin-bottom: 25px;
-    color: #d5e4f5;
-    font-size: 14px;
-}
-
-.price-card li::first-letter {
-    color: #00d9ff;
-}
-
-.price-card .btn {
-    width: 100%;
-}
-
-.popular {
-    border: 2px solid #00d9ff;
-    box-shadow: 0 0 25px #007bff44;
-}
-
-.popular-tag {
-    position: absolute;
-    top: -14px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #00d9ff;
-    color: #061329;
-    border-radius: 20px;
-    padding: 6px 20px;
-    font-size: 12px;
-    font-weight: bold;
-}
-
-/* CONTACT */
-.contact {
-    background: linear-gradient(120deg, #0b2040, #061329);
-}
-
-.contact .btn {
-    margin-top: 30px;
-}
-
-.contact small {
-    display: block;
-    color: #8da9c5;
-    margin-top: 15px;
-}
-
-/* FOOTER */
-footer {
-    background: #030b18;
+.tentang {
+    background: #191919;
     text-align: center;
-    padding: 30px 15px;
-    border-top: 1px solid #00d9ff;
+    padding: 65px 8%;
 }
 
-.footer-brand {
-    color: #00d9ff;
-    text-decoration: none;
-    font-size: 22px;
-    font-weight: bold;
+.keunggulan {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 35px;
 }
 
-.footer-brand span {
-    color: white;
-    font-size: 15px;
+.keunggulan div {
+    background: #252525;
+    padding: 25px 10px;
+    border-radius: 8px;
+    color: #d6a84f;
 }
 
-footer p {
-    color: #93a8c2;
-    font-size: 13px;
-    margin-top: 12px;
+.kontak {
+    text-align: center;
+    padding: 75px 20px;
 }
 
-/* RESPONSIVE HP */
-@media(max-width: 850px) {
+.kontak p {
+    color: #bbb;
+    margin: 20px 0 25px;
+}
+
+footer {
+    background: #080808;
+    text-align: center;
+    padding: 25px;
+    color: #aaa;
+}
+
+@media(max-width: 768px) {
     header {
         flex-direction: column;
         gap: 20px;
     }
 
-    nav {
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 15px;
-    }
-
-    .hero {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero p {
-        margin: auto;
-    }
-
-    .hero-buttons {
-        justify-content: center;
-    }
-
-    .features {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .service-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .price-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media(max-width: 500px) {
-    .hero {
-        padding: 65px 5%;
-    }
-
-    .hero-visual {
-        width: 250px;
-        height: 250px;
-    }
-
-    .circle {
-        width: 220px;
-        height: 220px;
-    }
-
-    .big-nk {
-        font-size: 70px;
-    }
-
-    .features {
-        grid-template-columns: 1fr;
-    }
-
-    .service-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .section h2 {
-        font-size: 27px;
-    }
-
     nav a {
-        font-size: 12px;
+        margin: 0 7px;
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .mobil-container {
+        grid-template-columns: 1fr;
+    }
+
+    .keunggulan {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
