@@ -1,1 +1,29 @@
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
 
+.brand-icon {
+    font-size: 35px;
+    font-weight: 900;
+    font-style: italic;
+    color: #00d9ff;
+    border: 3px solid #00d9ff;
+    padding: 5px 10px;
+    border-radius: 12px;
+}
+
+.brand-text h2 {
+    color: white;
+    font-size: 21px;
+    font-weight: 900;
+}
+
+.brand-text span {
+    color: #00d9ff;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
